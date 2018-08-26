@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <link rel='stylesheet' href='/main.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>chAT</title>
+</head>
+<body class='gradient'>
+    <div id='fade-overlay'></div>
+    <div id='login'>
+        <div class='center' id='top'>
+            <h1>chAT. <span class='tiny'>a thingy to do chat</span></h1>
+        </div>
+        <p class='no-select center full-width padding-below'>Enter Your Screen Name</p>
+        <div id='login-form' class='padding-below'>
+            <input type='text' class='browser-default' id='name-enter' placeholder='Dave'>
+            <button id='join-button'>Join</button>
+        </div>
+        <p id='warn'>&nbsp;</p>
+        <p id='loading'>&nbsp;</p>
+    </div>
+    <script type='text/javascript' src='/socket.io/socket.io.js'></script>
+    <script type='text/javascript' src='/chat.js'></script>
+</body>
+</html>
+
